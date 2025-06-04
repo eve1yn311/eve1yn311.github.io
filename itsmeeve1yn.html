@@ -2,20 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>私のポートフォリオ</title>
-  <!-- Google Fonts -->
+  <title>eve1ynのポートフォリオ</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=JetBrains+Mono&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Noto Sans JP', sans-serif;
-      background: radial-gradient(circle at 20% 20%, #e0f7fa, #ffffff);
-      background-image: 
-        radial-gradient(#c1dcdc 1px, transparent 1px),
-        radial-gradient(#c1dcdc 1px, transparent 1px);
-      background-size: 30px 30px;
-      background-position: 0 0, 15px 15px;
-      color: #333;
+      background: url('library.jpg') no-repeat center center fixed;
+      background-size: cover;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -23,41 +22,45 @@
     }
 
     .card {
-      background-color: white;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 20px;
       text-align: center;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      max-width: 600px;
+    }
+
+    .card h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      text-shadow: 1px 1px 2px #ccc;
     }
 
     .card img {
       width: 200px;
       border-radius: 100px;
-      border: 3px solid #7dc9c9;
+      border: 4px solid #7dc9c9;
       margin-bottom: 20px;
-    }
-
-    .card h1 {
-      font-size: 1.8em;
-      margin-bottom: 0.3em;
     }
 
     .card p {
       font-size: 1.1em;
-      line-height: 1.6em;
       font-family: 'JetBrains Mono', monospace;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <h1>ようこそ</h1>
     <img src="mydogs.jpg" alt="地獄の番犬">
-    <h1>こんにちは、eve1ynです</h1>
     <p>
-      大学でMEMSや情報幾何、<br>マイクロバイオームの解析に取り組んでいます。<br>
-      科学とデザインの融合を目指しています。
+      はじめまして、eve1ynです。<br>
+      MEMSや情報幾何、バイオ情報解析に関心を持ち、<br>
+      現在はマイクロバイオームと数理モデルに取り組んでいます。
     </p>
   </div>
 </body>
 </html>
+
